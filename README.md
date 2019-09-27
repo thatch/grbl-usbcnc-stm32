@@ -1,6 +1,19 @@
 ![GitHub Logo](https://github.com/gnea/gnea-Media/blob/master/Grbl%20Logo/Grbl%20Logo%20250px.png?raw=true)
 
 ***
+Original file content moved to bottom of this file
+***
+
+This is a port of GRBL 1.1 to STM32F103 target https://github.com/usbcnc/grbl/wiki
+
+Many build options are available :
+* Thru Coocox.  Note tested recently
+* Thru build command using Makefile. Tests on OSX, Linux, Windows and WSL (Linux Susbsystem on Windows)
+* Thru Visual Studio Code, with Platformio Plugin.
+
+For proper coordinates, after homing, issue an G92 X0 Y0 Z0
+
+***
 _Click the `Release` tab to download pre-compiled `.hex` files or just [click here](https://github.com/gnea/grbl/releases)_
 ***
 Grbl is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling. This version of Grbl runs on an Arduino with a 328p processor (Uno, Duemilanove, Nano, Micro, etc).

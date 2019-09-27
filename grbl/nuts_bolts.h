@@ -53,7 +53,10 @@ extern LARGE_INTEGER Win32Frequency;
 #define F_CPU  Win32Frequency.QuadPart
 #endif
 #ifdef STM32F103C8
-#define F_CPU SystemCoreClock
+#ifdef F_CPU
+  #undef F_CPU
+  #define F_CPU SystemCoreClock
+#endif
 #endif
 #define DELAY_MODE_DWELL       0
 #define DELAY_MODE_SYS_SUSPEND 1

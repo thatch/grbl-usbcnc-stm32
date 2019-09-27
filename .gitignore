@@ -3,5 +3,10 @@
 *.elf
 *.DS_Store
 *.d
-
-README.md
+*.orig
+.pioenvs/
+.pio
+Thumbs.db
+.DS_Store
+output.map
+.vscode/
